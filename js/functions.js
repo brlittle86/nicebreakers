@@ -35,3 +35,12 @@ function renderScenario(i) {
   var scenarioEl = document.getElementById('scenario');
   scenarioEl.textContent = scenarios[i].scenario;
 }
+
+//Luay Typed render Answers function
+function renderAnswers(i) {
+  var answerEl = document.getElementById('answers');
+  for (var j = 0; j < 4;j++) {
+    var renderP = document.getElementById('render-answer-' + j);
+    answerEl.textContent = scenario[i].answerArray[j];
+  }
+}
