@@ -1,5 +1,5 @@
 'use strict';
-// Stephanie Typed renderName function
+// Stephanie Typed render Name submission and remove it function
 function renderNameSubmissionForm(){
   var sectionEl = document.getElementById('content');
   var formEl = document.createElement('form');
@@ -30,9 +30,8 @@ function removeNameSubmissionForm(){
   sectionEl.removeChild(formEl);
 }
 
-// Luay Typed renderScenario function
+// Luay Typed render Scenario function
 function renderScenario(i) {
   var scenarioEl = document.getElementById('scenario');
   scenarioEl.textContent = scenarios[i].scenario;
-
-
+}
