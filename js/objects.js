@@ -8,4 +8,3 @@ function ScenarioCreator (name, scenario) {
   this.answerArray = [];
   this.feedbackArray = [];
 };
-instanceCreator();

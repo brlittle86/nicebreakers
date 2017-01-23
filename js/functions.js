@@ -36,7 +36,7 @@ function renderScenario(i) {
   scenarioEl.textContent = scenarios[i].scenario;
 }
 
-//Luay Typed render Answers function
+//Luay & Brandon Typed render Answers function
 function renderAnswers(i) {
   var answerEl = document.getElementById('answers');
   for (var j = 0; j < 4;j++) {
