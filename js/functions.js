@@ -45,8 +45,8 @@ function renderAnswers(i) {
   }
 }
 
-//Stephanie created nameSubmissionFunc
-function nameSubmissionFunc(event) {
+//Stephanie created nameSubmissionEvent
+function nameSubmissionEvent(event) {
   event.preventDefault();
   event.stopPropagation();
   removeNameSubmissionForm();
