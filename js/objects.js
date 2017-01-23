@@ -1,7 +1,7 @@
-'use strict'; // Object ScenarioCreator & instanceCreator Created by Luay
+'use strict';
 
+// Object ScenarioCreator & instanceCreator Created by Luay
 var scenarios = [];
-
 function ScenarioCreator (name, scenario) {
   this.name = name;
   this.scenario = scenario;
