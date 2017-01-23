@@ -1,8 +1,9 @@
 'use strict';
-// Stephanie Typed renderName function
+// Stephanie Typed render Name submission and remove it function
 function renderNameSubmissionForm(){
   var sectionEl = document.getElementById('content');
   var formEl = document.createElement('form');
+  formEl.setAttribute('id', 'form');
   var labelEl = document.createElement('label');
   labelEl.setAttribute('name', 'username');
   labelEl.textContent = 'Enter your name to get started:';
@@ -23,7 +24,13 @@ function renderNameSubmissionForm(){
   sectionEl.appendChild(formEl);
 }
 
-// Luay Typed renderScenario function
+function removeNameSubmissionForm(){
+  var sectionEl = document.getElementById('content');
+  var formEl = document.getElementById('form');
+  sectionEl.removeChild(formEl);
+}
+
+// Luay Typed render Scenario function
 function renderScenario(i) {
   var scenarioEl = document.getElementById('scenario');
   scenarioEl.textContent = scenarios[i].scenario;
