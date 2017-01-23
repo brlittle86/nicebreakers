@@ -1,7 +1,7 @@
 'use strict';
 
 // Object ScenarioCreator Created by Luay
-var scenariosArray = [];
+var scenariosArray = initializeScenarioObjects();
 function ScenarioCreator (name, scenario) {
   this.name = name;
   this.scenario = scenario;
