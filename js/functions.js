@@ -33,7 +33,7 @@ function removeNameSubmissionForm(){
 // Luay Typed render Scenario function
 function renderScenario(i) {
   var scenarioEl = document.getElementById('scenario');
-  scenarioEl.textContent = scenarios[i].scenario;
+  scenarioEl.textContent = scenariosArray[i].scenario;
 }
 
 //Luay & Brandon Typed render Answers function
@@ -41,6 +41,14 @@ function renderAnswers(i) {
   var answerEl = document.getElementById('answers');
   for (var j = 0; j < 4;j++) {
     var renderP = document.getElementById('render-answer-' + j);
-    answerEl.textContent = scenario[i].answerArray[j];
+    answerEl.textContent = scenariosArray[i].answerArray[j];
   }
+}
+
+//Stephanie created nameSubmissionFunc
+function nameSubmissionFunc(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  removeNameSubmissionForm();
+  renderScenario(i);
 }
