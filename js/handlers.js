@@ -27,7 +27,9 @@ function nextButtonListener (event) {
     localStorage.removeItem('globalIndex');
   } else {
     i++;
+
     localStorage.globalIndex = JSON.stringify(i);
+    removeFeedback();
     renderScenario(i);
   }
 }
