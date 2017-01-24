@@ -76,3 +76,9 @@ function renderFeedback(i) {
   submitEl.setAttribute('type', 'click');
   submitEl.textContent = 'Next';
 }
+
+//Stephanie created removeFeedback
+function removeFeedback(){
+  var pEl = document.getElementsByClassName('feedback');
+  pEl.textContent = '';
+}
