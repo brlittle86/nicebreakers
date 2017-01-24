@@ -9,3 +9,11 @@ function nameSubmissionEvent(event) {
   removeNameSubmissionForm();
   renderScenario(i);
 }
+
+// Stephanie created scenarioSubmissionEvent
+// needs to be tested with feedback
+function scenarioSubmissionEvent(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  renderFeedback(i);
+}
