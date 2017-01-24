@@ -46,16 +46,6 @@ function renderScenario(i) {
   scenarioEl.appendChild(submitEl);
 }
 
-//Stephanie created nameSubmissionEvent
-function nameSubmissionEvent(event) {
-  event.preventDefault();
-  event.stopPropagation();
-  storedUserName = event.target.username.value; // added username to local storage/global variable by Brandon
-  localStorage.storedUserName = JSON.stringify(storedUserName);
-  removeNameSubmissionForm();
-  renderScenario(i);
-}
-
 //Luay created the Final Thank you note
 function thankYou() {
   var thanks = document.getElementById('thank-you');
@@ -83,9 +73,8 @@ function renderFeedback(i) {
     var renderP = document.getElementById('render-feedback-3');
     answerEl.textContent = scenariosArray[i].answerArray[3];
   }
-  var submitEl = document.createElement('button');
+  var submitEl = document.getElementById('submit');
   submitEl.setAttribute('id', 'next');
   submitEl.setAttribute('type', 'click');
   submitEl.textContent = 'Next';
-  scenarioEl.appendChild(submitEl);
 }
