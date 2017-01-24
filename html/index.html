@@ -5,6 +5,8 @@
   <head>
     <meta charset="utf-8">
     <title>Nice Breakers</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" /> <!--css link code written by Luay-->
+    <link rel="stylesheet" type="text/css" href="../css/quiz.css" />
   </head>
 
   <header> <!--header code written by Stephanie-->
@@ -21,8 +23,25 @@
   </header>
 
   <body>
-
+    <div>
+      <section id="story">
+        <p>Let's say you find yourself waiting for your coffee at your favorite coffee shop, and suddenly a person approaches you, commenting on your appearance and asking your name. This person is fidgeting and won't look straight at you when they speak. They are standing too close, practically breathing in your face. Does this make you uncomfortable? Would you want to talk to this person?</p>
+      </section>
+      <section id="goal-statement">
+        <p>Our goal is to provide you with a bit of a primer to avoid situations like the one above! Whether you are hesitant to approach someone, are unsure of what is appropriate to say or do, or simply don't know how to leave a conversation, this training should give you some insight on communication in a variety of social situations and settings.</p>
+      </section>
+    </div>
+    <section id="name">
+      <form id="name-entry">
+        <label for="userName">Enter your name to get started:</label>
+        <input name="userName" id="name-input" type="text" required="required" />
+        <button type="submit" id="submit-button">Go!</button>
+      </form>
+    </section>
   </body>
-  
+  <script src="../js/app.js"></script>
+  <script src="../js/functions.js"></script>
+  <script src="../js/handlers.js"></script>
+  <script src="../js/objects.js"></script>
 </html>
-<!--boiler plate code and basic framework done by Brandon-->
+<!--boiler plate code, basic framework, and body content done by Brandon-->
