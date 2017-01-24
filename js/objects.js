@@ -15,7 +15,7 @@ function initializeScenarioObjects () {
     new ScenarioCreator('Classroom', 'Today is the first day of a new class and you are not sure if you are in the right room. There is another person in the room, waiting for the instructor to arrive. Choose an action below that is closest to how you might approach that student.', [
       'Approach, say hello, and ask if this is the room for your class.',
       'Say aloud that you hope this class is a good one.',
-      'Casually mention how confusing the build layout is.',
+      'Casually mention how confusing the building layout is.',
       'Tap them on the shoulder and ask if they belong here.'
     ], [
       'That is a great option! It is polite and personable, without being invasive.',
