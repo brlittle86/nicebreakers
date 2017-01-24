@@ -88,4 +88,11 @@ function renderFeedback(i) {
   submitEl.setAttribute('type', 'click');
   submitEl.textContent = 'Next';
   scenarioEl.appendChild(submitEl);
+  // re-write the scenario one we click on the Next button
+  if (i === scenariosArray.length) { //Luay created the conditional if
+    thankYou();
+  } else {
+    i++;
+    renderScenario(i);
+  }
 }
