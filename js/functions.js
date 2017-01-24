@@ -52,3 +52,14 @@ function nameSubmissionFunc(event) {
   removeNameSubmissionForm();
   renderScenario(i);
 }
+
+//Luay created the Final Thank you note
+function thankYou() {
+  var thanks = document.getElementById('thank-you');
+  thanks.textContent = 'Thank you for completing our little training exercise. If you would like more information, please click this button to take you to our resources page. ';
+  var button = document.createElement('button');
+  button.setAttribute('type', 'click');
+  button.textContent = 'Resources!';
+  thanks.appendChild(button);
+  console.log('thank you note is running');
+}
