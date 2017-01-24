@@ -39,8 +39,7 @@ function renderScenario(i) {
     var renderP = document.getElementById('render-answer-' + j);
     answerEl.textContent = scenariosArray[i].answerArray[j];
   }
-  var submitEl = document.createElement('button');
-  submitEl.setAttribute('id', 'submit');
+  var submitEl = getElementById('button');
   submitEl.setAttribute('type', 'submit');
   submitEl.textContent = 'Submit Answer';
   scenarioEl.appendChild(submitEl);
@@ -73,8 +72,7 @@ function renderFeedback(i) {
     var renderP = document.getElementById('render-feedback-3');
     answerEl.textContent = scenariosArray[i].answerArray[3];
   }
-  var submitEl = document.getElementById('submit');
-  submitEl.setAttribute('id', 'next');
+  var submitEl = document.getElementById('button');
   submitEl.setAttribute('type', 'click');
   submitEl.textContent = 'Next';
 }
