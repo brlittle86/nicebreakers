@@ -20,25 +20,34 @@
     </header>
     <section id="content">
     </section>
-    <section>
-      <p id="scenario"> <!--Luay created tags to render scenarios and answers-->
-      </p>
-      <p id="answers"> <!--Brandon set the answers to input tags-->
-        <input type="radio" id="render-answer-0"></input>
-        <input type="radio" id="render-answer-1"></input>
-        <input type="radio" id="render-answer-2"></input>
-        <input type="radio" id="render-answer-3"></input>
-      </p>
+    <form id="scenario-form">
+      <div id="scenario"> <!--Luay created tags to render scenarios and answers-->
+      </div>
+      <div id="answers"> <!--Brandon set the answers to input tags-->
+        <input type="radio" id="input-0" />
+        <label for="input-0" for=""id="label-0"></label>
+        <input type="radio" id="input-1" />
+        <label for="input-1" id="label-1"></label>
+        <input type="radio" id="input-2" />
+        <label for="input-2" id="label-2"></label>
+        <input type="radio" id="input-3" />
+        <label for="input-3" id="label-3"></label>
+      </div>
+      <button id="submit-button" type="submit">SUBMIT</button>
+    </form>
+    <form>
       <p>
         <p id="render-feedback-0" class="feedback"></p>
         <p id="render-feedback-1" class="feedback"></p>
         <p id="render-feedback-2" class="feedback"></p>
         <p id="render-feedback-3" class="feedback"></p>
       </p>
-      <p id="thank-you">
-      </p>
-      <button id="button"></button>
-    </section>
+    </form>
+    <form id="next-form">
+      <button type="submit" id="next">NEXT</button>
+    </form>
+    <p id="thank-you">
+    </p>
     <script src="../js/functions.js"></script>
     <script src="../js/objects.js"></script>
     <script src="../js/handlers.js"></script>
