@@ -61,4 +61,5 @@ function thankYou() {
   button.setAttribute('type', 'click');
   button.textContent = 'Resources!';
   thanks.appendChild(button);
+  console.log('thank you note is running');
 }
