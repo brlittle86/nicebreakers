@@ -73,9 +73,8 @@ function renderFeedback(i) {
     var renderP = document.getElementById('render-feedback-3');
     answerEl.textContent = scenariosArray[i].answerArray[3];
   }
-  var submitEl = document.createElement('button');
+  var submitEl = document.getElementById('submit');
   submitEl.setAttribute('id', 'next');
   submitEl.setAttribute('type', 'click');
   submitEl.textContent = 'Next';
-  scenarioEl.appendChild(submitEl);
 }
