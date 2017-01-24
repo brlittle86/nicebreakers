@@ -46,16 +46,6 @@ function renderScenario(i) {
   scenarioEl.appendChild(submitEl);
 }
 
-//Stephanie created nameSubmissionEvent
-function nameSubmissionEvent(event) {
-  event.preventDefault();
-  event.stopPropagation();
-  storedUserName = event.target.username.value; // added username to local storage/global variable by Brandon
-  localStorage.storedUserName = JSON.stringify(storedUserName);
-  removeNameSubmissionForm();
-  renderScenario(i);
-}
-
 //Luay created the Final Thank you note
 function thankYou() {
   var thanks = document.getElementById('thank-you');
