@@ -17,5 +17,8 @@ nameSubmission.addEventListener('submit', nameSubmissionEvent, false);
 
 //Stephanie created event listener for scenarioSubmissionEvent
 //Leave commented until scenarioSubmissionEvent function created
-// var scenarioSubmission = document.getElementById('submit');
-// scenarioSubmission.addEventListener('submit', scenarioSubmissionEvent, false);
+var scenarioSubmission = document.getElementById('submit');
+scenarioSubmission.addEventListener('submit', scenarioSubmissionEvent, false);
+
+var nextButton = document.getElementById('next');
+nextButton.addEventListener('click', nextButtonListener, false);
