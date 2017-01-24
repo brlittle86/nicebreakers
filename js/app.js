@@ -12,4 +12,10 @@ if (storedUserName !== null) {
 
 //nameSubmission event listener written by Stephanie
 var nameSubmission = document.getElementById('form');
-nameSubmission.addEventListener('submit', nameSubmissionFunc, false);
+
+nameSubmission.addEventListener('submit', nameSubmissionEvent, false);
+
+//Stephanie created event listener for scenarioSubmissionEvent
+//Leave commented until scenarioSubmissionEvent function created
+// var scenarioSubmission = document.getElementById('submit');
+// scenarioSubmission.addEventListener('submit', scenarioSubmissionEvent, false);

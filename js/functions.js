@@ -46,8 +46,8 @@ function renderScenario(i) {
   scenarioEl.appendChild(submitEl);
 }
 
-//Stephanie created nameSubmissionFunc
-function nameSubmissionFunc(event) {
+//Stephanie created nameSubmissionEvent
+function nameSubmissionEvent(event) {
   event.preventDefault();
   event.stopPropagation();
   storedUserName = event.target.username.value; // added username to local storage/global variable by Brandon
@@ -65,4 +65,27 @@ function thankYou() {
   button.textContent = 'Resources!';
   thanks.appendChild(button);
   console.log('thank you note is running');
+}
+
+//Stephanie created renderFeedback
+//NEEDS TO BE TESTED WITH ANSWERS
+function renderFeedback(i) {
+  if (event.target.id === 'render-answer-0'){
+    var renderP = document.getElementById('render-feedback-0');
+    answerEl.textContent = scenariosArray[i].answerArray[0];
+  } else if (event.target.id === 'render-answer-1'){
+    var renderP = document.getElementById('render-feedback-1');
+    answerEl.textContent = scenariosArray[i].answerArray[1];
+  } else if (event.target.id === 'render-answer-2'){
+    var renderP = document.getElementById('render-feedback-2');
+    answerEl.textContent = scenariosArray[i].answerArray[2];
+  } else if (event.target.id === 'render-answer-3'){
+    var renderP = document.getElementById('render-feedback-3');
+    answerEl.textContent = scenariosArray[i].answerArray[3];
+  }
+  var submitEl = document.createElement('button');
+  submitEl.setAttribute('id', 'next');
+  submitEl.setAttribute('type', 'click');
+  submitEl.textContent = 'Next';
+  scenarioEl.appendChild(submitEl);
 }
