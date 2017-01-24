@@ -1,7 +1,7 @@
 # nicebreakers
 
 Team Name: Cold Callers <br>
-Team members: Stephanie, Brandon, Luay, Louis <br>
+Team members: Stephanie, Brandon, Luay <br>
 Project Name: Nice Breakers <br>
 Project Concept: Provide an interactive training environment on what would be an appropriate opening line in given scenarios. <br>
 
