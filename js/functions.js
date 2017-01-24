@@ -39,21 +39,10 @@ function renderScenario(i) {
     var renderP = document.getElementById('render-answer-' + j);
     answerEl.textContent = scenariosArray[i].answerArray[j];
   }
-  var submitEl = document.createElement('button');
-  submitEl.setAttribute('id', 'submit');
+  var submitEl = getElementById('button');
   submitEl.setAttribute('type', 'submit');
   submitEl.textContent = 'Submit Answer';
   scenarioEl.appendChild(submitEl);
-}
-
-//Stephanie created nameSubmissionEvent
-function nameSubmissionEvent(event) {
-  event.preventDefault();
-  event.stopPropagation();
-  storedUserName = event.target.username.value; // added username to local storage/global variable by Brandon
-  localStorage.storedUserName = JSON.stringify(storedUserName);
-  removeNameSubmissionForm();
-  renderScenario(i);
 }
 
 //Luay created the Final Thank you note
@@ -83,9 +72,7 @@ function renderFeedback(i) {
     var renderP = document.getElementById('render-feedback-3');
     answerEl.textContent = scenariosArray[i].answerArray[3];
   }
-  var submitEl = document.createElement('button');
-  submitEl.setAttribute('id', 'next');
+  var submitEl = document.getElementById('button');
   submitEl.setAttribute('type', 'click');
   submitEl.textContent = 'Next';
-  scenarioEl.appendChild(submitEl);
 }
