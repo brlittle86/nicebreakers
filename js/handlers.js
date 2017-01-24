@@ -24,8 +24,11 @@ function nextButtonListener (event) {
   event.stopPropagation();
   if (i === scenariosArray.length) {
     thankYou();
+    localStorage.removeItem('globalIndex');
   } else {
     i++;
+
+    localStorage.globalIndex = JSON.stringify(i);
     removeFeedback();
     renderScenario(i);
   }
