@@ -1,0 +1,75 @@
+/*Luay Worked on this CSS file*/
+@font-face {
+  font-family: 'Janda';
+  src: url('../fonts/Adventure.otf')
+}
+
+@font-face {
+  font-family: 'Comic-Neue-Sans';
+  src: url('../fonts/ComicNeueSansID.ttf')
+}
+@font-face {
+  font-family: 'Fishfingers-Light';
+  src: url('../fonts/FishfingersLight.ttf')
+}
+@font-face {
+  font-family: 'PORKYS';
+  src: url('../fonts/PORKYS.TTF')
+}
+
+/*#body-background-img {
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: no-repeat;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 1;
+}*/
+
+body {
+  background-color: grey;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+
+header {
+  display: block;
+  height: 110px;
+  background: black;
+}
+
+#page-name img {
+  width: 300px;
+}
+#page-name {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: PORKYS;
+  padding: 0px 40px 0px 40px;
+  float: left;
+  text-shadow: 2px 8px black;
+}
+
+#nav {
+  float: right;
+  margin: 20px 30px;
+}
+li {
+  text-decoration: none;
+  display: inline;
+  max-width: 100%;
+  margin: 0px 10px 0px 10px;
+  font-family: Comic-Neue-Sans;
+  font-size: 27px;
+  color: white;
+  text-shadow: 2px 4px black;
+}
+li a {
+  text-decoration: none;
+  color: inherit;
+}
