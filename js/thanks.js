@@ -1,5 +1,9 @@
 'use strict';
 
+//Luay created listener for next button
+var nextButton = document.getElementById('next-form');
+nextButton.addEventListener('click', nextButtonListener, false);
+
 //Luay created the Final Thank you note
 function thankYou() {
   var thanks = document.getElementById('thank-you');
@@ -12,8 +16,8 @@ function thankYou() {
   thanks.appendChild(button);
   console.log('thank you note is running');
 }
-// LUAY re-write the scenario one we click on the Next button
 
+// LUAY re-write the scenario one we click on the Next button
 function nextButtonListener (event) {
   event.preventDefault();
   event.stopPropagation();
@@ -31,6 +35,3 @@ function nextButtonListener (event) {
     renderScenario(i);
   }
 }
-
-var nextButton = document.getElementById('next-form');
-nextButton.addEventListener('click', nextButtonListener, false);

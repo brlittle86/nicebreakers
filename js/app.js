@@ -1,19 +1,27 @@
 'use strict';
 
-//userIndex pulled from local storage if exists, else set index to 0
-var i = localStorage.getItem('globalIndex');
-if (i !== null) {
-  JSON.parse(i);
-} else {
-  var i = 0;
-  console.log(i);
+mainPageUserStorage();
+
+//Brandon created nameSubmissionEventMain and mainPageUserStorage
+function mainPageUserStorage(){
+  storedUserName = localStorage.getItem('storedUserName');
+  if (storedUserName !== null) {
+    JSON.parse(storedUserName);
+    var mainForm = document.getElementById('main-form').style.visibility = 'hidden';
+    var mainWelcome = document.getElementById('name');
+    var pEl = document.createElement('p');
+    pEl.textContent = 'Welcome ' + storedUserName + '!';
+    mainWelcome.appendChild(pEl);
+  } else {
+    var nameSubmissionMain = document.getElementById('main-form');
+    nameSubmissionMain.addEventListener('submit', nameSubmissionEventMain, false);
+  };
 }
 
-//userName pulled from local storage if exists, else write form for userName entry written by Brandon
-var storedUserName = localStorage.getItem('storedUserName');
-if (storedUserName !== null) {
-  JSON.parse(storedUserName);
-  renderScenario(i);
-} else {
-  renderNameSubmissionForm();
-};
+function nameSubmissionEventMain(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  storedUserName = event.target.username.value; // added username to local storage/global variable by Brandon
+  localStorage.storedUserName = JSON.stringify(storedUserName);
+  location.href = '../html/quiz.html';
+}

@@ -1,6 +1,24 @@
 'use strict';
 
-// Luay Typed render Scenario function; Stephanie placed render answers section inside this function and added DOM for button
+var scenarioSubmission = document.getElementById('scenario-form');
+scenarioSubmission.addEventListener('submit', scenarioSubmissionEvent, false);
+console.log(typeof(scenarioSubmission));
+
+//Stephanie created input listeners
+var answerZero = document.getElementById('input-0');
+var answerOne = document.getElementById('input-1');
+var answerTwo = document.getElementById('input-2');
+var answerThree = document.getElementById('input-3');
+
+answerZero.addEventListener('change', changeZeroInput, false);
+
+answerOne.addEventListener('change', changeOneInput, false);
+
+answerTwo.addEventListener('change', changeTwoInput, false);
+
+answerThree.addEventListener('change', changeThreeInput, false);
+
+// Luay Typed render Scenario and answer functions; Stephanie placed render answers section inside this function/reorganized
 function renderScenario(i) {
   var scenarioEl = document.getElementById('scenario');
   scenarioEl.textContent = scenariosArray[i].scenario;
@@ -11,11 +29,7 @@ function renderScenario(i) {
   }
 }
 
-var answerZero = document.getElementById('input-0');
-var answerOne = document.getElementById('input-1');
-var answerTwo = document.getElementById('input-2');
-var answerThree = document.getElementById('input-3');
-
+//Stephanie created handlers
 function changeZeroInput (event){
   answerZero.checked = true;
   answerOne.checked = false;
@@ -44,15 +58,6 @@ function changeThreeInput (event){
   answerThree.checked = true;
 }
 
-answerZero.addEventListener('change', changeZeroInput, false);
-console.log('answerzero' + answerZero);
-
-answerOne.addEventListener('change', changeOneInput, false);
-
-answerTwo.addEventListener('change', changeTwoInput, false);
-
-answerThree.addEventListener('change', changeThreeInput, false);
-
 //Stephanie created event listener for scenarioSubmissionEvent
 function scenarioSubmissionEvent(event) {
   event.preventDefault();
@@ -60,10 +65,6 @@ function scenarioSubmissionEvent(event) {
   console.log('scenario submission is running');
   renderFeedback();
 }
-
-var scenarioSubmission = document.getElementById('scenario-form');
-scenarioSubmission.addEventListener('submit', scenarioSubmissionEvent, false);
-console.log(typeof(scenarioSubmission));
 
 //Stephanie created renderFeedback
 function renderFeedback() {

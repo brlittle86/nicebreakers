@@ -1,5 +1,24 @@
 'use strict';
 
+//userName pulled from local storage if exists, else write form for userName entry written by Brandon
+quizPageUserStorage();
+
+function quizPageUserStorage(){
+  storedUserName = localStorage.getItem('storedUserName');
+  if (storedUserName !== null) {
+    JSON.parse(storedUserName);
+    renderScenario(i);
+  } else {
+    renderNameSubmissionForm();
+  };
+}
+
+//nameSubmission event listener written by Stephanie
+var nameSubmission = document.getElementById('form');
+if (nameSubmission !== null){
+  nameSubmission.addEventListener('submit', nameSubmissionEvent, false);
+}
+
 //Stephanie created nameSubmissionEvent
 function nameSubmissionEvent(event) {
   event.preventDefault();
@@ -8,12 +27,6 @@ function nameSubmissionEvent(event) {
   localStorage.storedUserName = JSON.stringify(storedUserName);
   removeNameSubmissionForm();
   renderScenario(i);
-}
-
-//nameSubmission event listener written by Stephanie
-var nameSubmission = document.getElementById('form');
-if (nameSubmission !== null){
-  nameSubmission.addEventListener('submit', nameSubmissionEvent, false);
 }
 
 // Stephanie Typed render Name submission and remove it function
