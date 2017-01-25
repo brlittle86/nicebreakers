@@ -22,7 +22,8 @@ answerThree.addEventListener('change', changeThreeInput, false);
 function renderScenario(i) {
   var backgroundEl = document.getElementById('scenario-feedback');
   backgroundEl.style.backgroundImage = 'url(' + scenariosArray[i].filepath + ')';
-  backgroundEl.setAttribute('width', '50%');
+  backgroundEl.style.backgroundSize = '100%';
+  backgroundEl.style.opacity = '0.75';
   var scenarioEl = document.getElementById('scenario');
   scenarioEl.textContent = scenariosArray[i].scenario;
   for (var j = 0; j < scenariosArray[i].answerArray.length; j++){
