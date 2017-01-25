@@ -1,12 +1,4 @@
 'use strict';
-var answerZero;
-var answerOne;
-var answerTwo;
-var answerThree;
-var answerChosenZero = [];
-var answerChosenOne = [];
-var answerChosenTwo = [];
-var answerChosenThree = [];
 
 //userIndex pulled from local storage if exists, else set index to 0
 var i = localStorage.getItem('globalIndex');
@@ -21,7 +13,7 @@ if (i !== null) {
 var storedUserName = localStorage.getItem('storedUserName');
 if (storedUserName !== null) {
   JSON.parse(storedUserName);
-  // renderScenario(i);
+  renderScenario(i);
 } else {
   renderNameSubmissionForm();
 };
@@ -95,22 +87,35 @@ var answerTwo = document.getElementById('input-2');
 var answerThree = document.getElementById('input-3');
 
 function changeZeroInput (event){
-  answerChosenZero.push(document.getElementById('input-0'));
+  answerZero.checked = true;
+  answerOne.checked = false;
+  answerTwo.checked = false;
+  answerThree.checked = false;
 }
 
 function changeOneInput (event){
-  answerChosenOne.push(document.getElementById('input-1'));
+  answerZero.checked = false;
+  answerOne.checked = true;
+  answerTwo.checked = false;
+  answerThree.checked = false;
 }
 
 function changeTwoInput (event){
-  answerChosenTwo.push(document.getElementById('input-2'));
+  answerZero.checked = false;
+  answerOne.checked = false;
+  answerTwo.checked = true;
+  answerThree.checked = false;
 }
 
 function changeThreeInput (event){
-  answerChosenThree.push(document.getElementById('input-3'));
+  answerZero.checked = false;
+  answerOne.checked = false;
+  answerTwo.checked = false;
+  answerThree.checked = true;
 }
 
 answerZero.addEventListener('change', changeZeroInput, false);
+console.log('answerzero' + answerZero);
 
 answerOne.addEventListener('change', changeOneInput, false);
 
@@ -169,22 +174,19 @@ nextButton.addEventListener('click', nextButtonListener, false);
 //NEEDS TO BE TESTED WITH ANSWERS
 function renderFeedback() {
   console.log('render feedback is running');
-  if (answerChosenZero.length === 1){
+  if (answerZero.checked === true){
     var renderP = document.getElementById('render-feedback');
     renderP.textContent = scenariosArray[i].feedbackArray[0];
-    answerChosenZero = [];
-  } else if (answerChosenOne.length === 1){
+    console.log('answerzero' + answerZero);
+  } else if (answerOne.checked === true){
     var renderP = document.getElementById('render-feedback');
     renderP.textContent = scenariosArray[i].feedbackArray[1];
-    answerChosenOne = [];
-  } else if (answerChosenTwo.length === 1){
+  } else if (answerTwo.checked === true){
     var renderP = document.getElementById('render-feedback');
     renderP.textContent = scenariosArray[i].feedbackArray[2];
-    answerChosenTwo = [];
-  } else if (answerChosenThree.length === 1){
+  } else if (answerThree.checked === true){
     var renderP = document.getElementById('render-feedback');
     renderP.textContent = scenariosArray[i].feedbackArray[3];
-    answerChosenThree = [];
   }
 }
 
