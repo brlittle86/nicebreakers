@@ -1,26 +1,37 @@
 /*Luay Worked on this CSS file*/
-head {
 
-}
 body {
-  background-color: #EF9736;
+  background-color: grey;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+
+header {
+  display: block;
 }
 
 #page-name {
+  display: inline;
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   color: black;
   font-family: monospace;
+  float: left;
+}
+
+#nav {
+  display: inline;
 }
 
 ul {
+  display: block;
   max-width: 100%;
 }
 
 li {
   display: inline;
-}
-
-a {
-  min-width: 25%;
+  margin: 0px 10px 0px 10px;
+  float: right;
+  font-family: fantasy;
 }
