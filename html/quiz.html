@@ -20,39 +20,42 @@
     </header>
     <section id="content">
     </section>
-    <form id="scenario-form">
-      <div id="scenario"> <!--Luay created tags to render scenarios and answers-->
-      </div>
-      <div id="answers"> <!--Brandon set the answers to input tags-->
-        <ul>
-          <li>
-            <input type="radio" id="input-0" />
-            <label for="input-0" for=""id="label-0"></label>
-          </li>
-          <li>
-            <input type="radio" id="input-1" />
-            <label for="input-1" id="label-1"></label>
-          </li>
-          <li>
-            <input type="radio" id="input-2" />
-            <label for="input-2" id="label-2"></label>
-          </li>
-          <li>
-            <input type="radio" id="input-3" />
-            <label for="input-3" id="label-3"></label>
-          </li>
-        </ul>
-      </div>
-      <button id="submit-button" type="submit">SUBMIT</button>
-    </form>
-    <form>
-      <p>
-        <p id="render-feedback" class="feedback"></p>
-      </p>
-    </form>
-    <form id="next-form">
-      <button type="submit" id="next">NEXT</button>
-    </form>
+    <section id="quiz-block">
+      <form id="scenario-form">
+        <div id="scenario"> <!--Luay created tags to render scenarios and answers-->
+        </div>
+        <div id="answers"> <!--Brandon set the answers to input tags-->
+          <ul>
+            <li>
+              <input type="radio" id="input-0" />
+              <label for="input-0" for=""id="label-0"></label>
+            </li>
+            <li>
+              <input type="radio" id="input-1" />
+              <label for="input-1" id="label-1"></label>
+            </li>
+            <li>
+              <input type="radio" id="input-2" />
+              <label for="input-2" id="label-2"></label>
+            </li>
+            <li>
+              <input type="radio" id="input-3" />
+              <label for="input-3" id="label-3"></label>
+            </li>
+          </ul>
+        </div>
+        <button id="submit-button" type="submit">SUBMIT</button>
+      </form>
+      <form id="feedback-form">
+        <p>
+          <p id="render-feedback" class="feedback"></p>
+        </p>
+      </form>
+      <form id="next-form">
+        <button type="submit" id="next">NEXT</button>
+      </form>
+    </section>
+
     <form id="thank-you">
     </form>
     <script src="../js/global.js"></script>
