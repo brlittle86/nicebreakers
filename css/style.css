@@ -1,0 +1,26 @@
+/*Luay Worked on this CSS file*/
+head {
+
+}
+body {
+  background-color: #EF9736;
+}
+
+#page-name {
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  font-family: monospace;
+}
+
+ul {
+  max-width: 100%;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  min-width: 25%;
+}
