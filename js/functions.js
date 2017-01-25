@@ -82,15 +82,11 @@ function removeNameSubmissionForm(){
 function renderScenario(i) {
   var scenarioEl = document.getElementById('scenario');
   scenarioEl.textContent = scenariosArray[i].scenario;
-  var answerEl = document.getElementById('answers');
   for (var j = 0; j < scenariosArray[i].answerArray.length; j++){
     var labelEl = document.getElementById('label-' + j);
     labelEl.textContent = scenariosArray[i].answerArray[j];
     console.log(labelEl.textContent);
-    answerEl.appendChild(labelEl);
-
   }
-  scenarioEl.appendChild(answerEl);
 }
 
 var answerZero = document.getElementById('input-0');
@@ -137,7 +133,9 @@ console.log(typeof(scenarioSubmission));
 //Luay created the Final Thank you note
 function thankYou() {
   var thanks = document.getElementById('thank-you');
-  thanks.textContent = 'Thank you for completing our little training exercise. If you would like more information, please click this button to take you to our resources page. ';
+  var pEl = document.createElement('p');
+  pEl.textContent = 'Thank you for completing our little training exercise. If you would like more information, please click this button to take you to our resources page. ';
+  thanks.appendChild(pEl);
   var button = document.createElement('button');
   button.setAttribute('type', 'click');
   button.textContent = 'Resources!';
@@ -149,12 +147,16 @@ function thankYou() {
 function nextButtonListener (event) {
   event.preventDefault();
   event.stopPropagation();
-  if (i === scenariosArray.length) {
+  if (i === (scenariosArray.length - 1)) {
     thankYou();
     localStorage.removeItem('globalIndex');
   } else {
     i++;
     localStorage.globalIndex = JSON.stringify(i);
+    document.getElementById('input-0').checked = false;
+    document.getElementById('input-1').checked = false;
+    document.getElementById('input-2').checked = false;
+    document.getElementById('input-3').checked = false;
     removeFeedback();
     renderScenario(i);
   }
@@ -168,26 +170,28 @@ nextButton.addEventListener('click', nextButtonListener, false);
 function renderFeedback() {
   console.log('render feedback is running');
   if (answerChosenZero.length === 1){
-    var renderP = document.getElementById('render-feedback-0');
+    var renderP = document.getElementById('render-feedback');
     renderP.textContent = scenariosArray[i].feedbackArray[0];
     answerChosenZero = [];
   } else if (answerChosenOne.length === 1){
-    var renderP = document.getElementById('render-feedback-1');
-    renderP.textContent = scenariosArray[i].answerArray[1];
+    var renderP = document.getElementById('render-feedback');
+    renderP.textContent = scenariosArray[i].feedbackArray[1];
     answerChosenOne = [];
   } else if (answerChosenTwo.length === 1){
-    var renderP = document.getElementById('render-feedback-2');
-    renderP.textContent = scenariosArray[i].answerArray[2];
+    var renderP = document.getElementById('render-feedback');
+    renderP.textContent = scenariosArray[i].feedbackArray[2];
     answerChosenTwo = [];
   } else if (answerChosenThree.length === 1){
-    var renderP = document.getElementById('render-feedback-3');
-    renderP.textContent = scenariosArray[i].answerArray[3];
+    var renderP = document.getElementById('render-feedback');
+    renderP.textContent = scenariosArray[i].feedbackArray[3];
     answerChosenThree = [];
   }
 }
 
 //Stephanie created removeFeedback
 function removeFeedback(){
-  var pEl = document.getElementsByClassName('feedback');
+  console.log('remove feedback is running');
+  var pEl = document.getElementById('render-feedback');
   pEl.textContent = '';
+  console.log(pEl.textContent);
 }
