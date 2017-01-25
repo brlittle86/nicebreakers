@@ -3,9 +3,13 @@
 //Luay created listener for next button
 var nextButton = document.getElementById('next-form');
 nextButton.addEventListener('click', nextButtonListener, false);
+var resourcesButton = document.getElementById('thank-you');
+resourcesButton.addEventListener('click', resourcesButtonListener, false);
 
-//Luay created the Final Thank you note
+//Luay created the Final Thank you note, Brandon added removal of scenario content
 function thankYou() {
+  var quizBlock = document.getElementById('quiz-block');
+  quizBlock.parentElement.removeChild(quizBlock);
   var thanks = document.getElementById('thank-you');
   var pEl = document.createElement('p');
   pEl.textContent = 'Thank you for completing our little training exercise. If you would like more information, please click this button to take you to our resources page. ';
@@ -34,4 +38,11 @@ function nextButtonListener (event) {
     removeFeedback();
     renderScenario(i);
   }
+}
+
+//Brandon created event handler for clicking the resources button
+function resourcesButtonListener (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  location.href = '../html/resources.html';
 }
