@@ -8,13 +8,16 @@
   font-family: 'Comic-Neue-Sans';
   src: url('../fonts/ComicNeueSansID.ttf')
 }
-
 @font-face {
   font-family: 'Fishfingers-Light';
   src: url('../fonts/FishfingersLight.ttf')
 }
+@font-face {
+  font-family: 'PORKYS';
+  src: url('../fonts/PORKYS.TTF')
+}
 
-#body-background-img {
+/*#body-background-img {
   max-width: 100%;
   padding: 0px;
   margin: 0px;
@@ -22,7 +25,7 @@
   opacity: 0.5;
   position: absolute;
   z-index: 1;
-}
+}*/
 
 body {
   background-color: grey;
@@ -35,30 +38,36 @@ body {
 
 header {
   display: block;
-  height: 140px;
+  height: 110px;
+  background: black;
 }
 
+#page-name img {
+  width: 300px;
+}
 #page-name {
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   color: white;
-  font-family: Fishfingers-Light;
-  padding: 0px 30px 0px 30px;
+  font-family: PORKYS;
+  padding: 0px 40px 0px 40px;
   float: left;
+  text-shadow: 2px 8px black;
 }
 
 #nav {
   float: right;
-  margin: 20px 80px;
+  margin: 20px 30px;
 }
 li {
   text-decoration: none;
   display: inline;
   max-width: 100%;
   margin: 0px 10px 0px 10px;
-  font-family: fantasy;
-  font-size: 23px;
-  /*text-shadow: 2px 1px black;*/
+  font-family: Comic-Neue-Sans;
+  font-size: 27px;
+  color: white;
+  text-shadow: 2px 4px black;
 }
 li a {
   text-decoration: none;

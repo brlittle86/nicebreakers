@@ -1,3 +1,10 @@
-/*p {
-  display: relative;
-}*/
+#story {
+  margin: 50px 50px 50px 50px;
+  font-size: 25px;
+  font-family: Comic-Neue-Sans;
+}
+#goal-statement {
+  margin: 50px 50px 50px 50px;
+  font-size: 25px;
+  font-family: Comic-Neue-Sans;
+}
