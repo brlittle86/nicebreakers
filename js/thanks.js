@@ -3,6 +3,8 @@
 //Luay created listener for next button
 var nextButton = document.getElementById('next-form');
 nextButton.addEventListener('click', nextButtonListener, false);
+var resourcesButton = document.getElementById('thank-you');
+resourcesButton.addEventListener('click', resourcesButtonListener, false);
 
 //Luay created the Final Thank you note
 function thankYou() {
@@ -34,4 +36,11 @@ function nextButtonListener (event) {
     removeFeedback();
     renderScenario(i);
   }
+}
+
+//Brandon created event handler for clicking the resources button
+function resourcesButtonListener (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  location.href = '../html/resources.html';
 }
