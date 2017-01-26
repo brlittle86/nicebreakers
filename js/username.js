@@ -10,6 +10,7 @@ function quizPageUserStorage(){
     renderScenario(i);
   } else {
     renderNameSubmissionForm();
+    document.getElementById('quiz-block').style.visibility = 'hidden';
   };
 }
 

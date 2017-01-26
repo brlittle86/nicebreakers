@@ -1,40 +1,103 @@
+html {
+  height: 100%;
+}
 body {
-  background-image: url("../img/coffeeshop.png");
+  background-image: url("../img/altcoffeeshop.png");
   background-repeat: no-repeat;
   background-size: 100%;
-
+  height: auto;
+  min-height: 100%;
 }
-
+p {
+  margin: 0px;
+  padding: 0px;
+}
+div {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  padding: 8px 0px 8px 0px;
+  height: auto;
+}
 #story {
   width:70%;
   margin: auto;
-  font-size: 20px;
-  font-family: Comic-Neue-Sans;
+  font-size: 25px;
   margin-top: 20px;
-  /*border: 2px solid grey;*/
-  /*background-color: grey;*/
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 #goal-statement {
   width:70%;
   margin: auto;
-  font-size: 20px;
-  font-family: Comic-Neue-Sans;
+  font-size: 25px;
+  font-family: 'PT Sans Narrow', sans-serif;
   margin-top: 20px;
   padding: 0px;
+
 }
 
-#name {
-  width: 22%;
+fieldset {
+  text-align: center;
+  border-color: #00233f;
+  border-width: thin;
+}
+
+#main-form {
   margin: auto;
+  width: 40%;
+  border: none;
 }
+
+#name-section {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-top: 0;
+  padding-bottom: 1%;
+  margin-bottom: 3%;
+}
+
+#name-section p{
+  font-size: 3em;
+  width: 50%;
+  text-align: center;
+  vertical-align: top;
+  margin: auto;
+  color: #f9a908;
+}
+
 #enter-your-name {
-  font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+  padding-bottom: 2px;
 }
+
 #name-input {
-  width: 80%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  width: 75%;
+  display: inline;
+  clear: left;
+  float: left;
+  height: 25px;
+  font-size: 20px;
 }
 
 #submit-button {
-  background-color: pink;
-  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 120%;
+  color: black;
+  background-color: #f2f2f2;
+  border: 1px solid #bdbdbd ;
+  border-radius: 5px;
+  margin-bottom: 0;
+  text-align: center;
+  float: right;
+  padding-right: 2%;
+  width: 70px;
 }

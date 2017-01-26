@@ -1,20 +1,5 @@
 /*Luay Worked on this CSS file*/
-@font-face {
-  font-family: 'Janda';
-  src: url('../fonts/Adventure.otf')
-}
-@font-face {
-  font-family: 'Comic-Neue-Sans';
-  src: url('../fonts/ComicNeueSansID.ttf')
-}
-@font-face {
-  font-family: 'Fishfingers-Light';
-  src: url('../fonts/FishfingersLight.ttf')
-}
-@font-face {
-  font-family: 'PORKYS';
-  src: url('../fonts/PORKYS.TTF')
-}
+
 @font-face {
   font-family: 'offside';
   src: url('../fonts/Offside-Regular.ttf')
@@ -31,18 +16,21 @@
 }
 
 body {
-  background-color: grey;
+  background-color: #fbfcff;
   margin: 0px;
   padding: 0px;
   display: block;
   position: absolute;
   z-index: 100;
+  color: #00233f;
+  width: 100%;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 header {
   display: block;
   height: 80px;
-  background: black;
+  background: #00233f;
   padding: zero;
   margin: zero;
 }
@@ -74,12 +62,12 @@ ul {
   padding: 0px;
   margin: 0px;
 }
-li {
+#nav li {
   text-decoration: none;
   display: inline;
   max-width: 100%;
   margin: 0px 15px 0px 15px;
-  font-family: Comic-Neue-Sans;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 27px;
   color: white;
   text-shadow: 2px 4px black;

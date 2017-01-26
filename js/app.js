@@ -6,11 +6,11 @@ mainPageUserStorage();
 function mainPageUserStorage(){
   storedUserName = localStorage.getItem('storedUserName');
   if (storedUserName !== null) {
-    JSON.parse(storedUserName);
+    var parsedName = JSON.parse(storedUserName);
     var mainForm = document.getElementById('main-form').style.visibility = 'hidden';
-    var mainWelcome = document.getElementById('name');
+    var mainWelcome = document.getElementById('name-section');
     var pEl = document.createElement('p');
-    pEl.textContent = 'Welcome ' + storedUserName + '!';
+    pEl.textContent = 'Welcome ' + parsedName + '!';
     mainWelcome.appendChild(pEl);
   } else {
     var nameSubmissionMain = document.getElementById('main-form');
