@@ -28,6 +28,7 @@ function nextButtonListener (event) {
   if (i === (scenariosArray.length - 1)) {
     thankYou();
     localStorage.removeItem('globalIndex');
+    i = 0;
   } else {
     i++;
     localStorage.globalIndex = JSON.stringify(i);

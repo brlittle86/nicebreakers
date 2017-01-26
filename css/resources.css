@@ -1,0 +1,10 @@
+#dos-header, #donts-header, .resource-lists, #links, #lists {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+}
+
+#link-list {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
