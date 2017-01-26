@@ -7,10 +7,10 @@
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
+  margin-bottom: 15px;
 }
 
 #lists {
-  background-color: #f9a908;
   width: 560px;
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -19,7 +19,6 @@
   -moz-column-width: 80px;
   column-width: 80px;
   margin: auto;
-  padding-left: 12px;
 }
 
 #links {
@@ -27,6 +26,26 @@
   margin: auto;
 }
 
-#dos, #donts, #link-list {
+#resource-lists a {
+  text-decoration: underline;
+}
+
+#dos, #donts, #link-list, #site-desc {
     list-style-type: none;
+}
+
+#site-desc {
+  font-size: 15px;
+}
+
+#do-list, #dont-list {
+  background-color: #f9a908;
+  border-radius: 8px;
+  padding: 10px;
+  padding-top: 1px;
+}
+
+#external-header {
+  width: 100%;
+  text-align: center;
 }
