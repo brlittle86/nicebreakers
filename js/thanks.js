@@ -2,7 +2,10 @@
 
 //Luay created listener for next button
 var nextButton = document.getElementById('next-form');
-nextButton.addEventListener('click', nextButtonListener, false);
+if (nextButton !== null) {
+  nextButton.addEventListener('click', nextButtonListener, false);
+}
+
 var resourcesButton = document.getElementById('thank-you');
 resourcesButton.addEventListener('click', resourcesButtonListener, false);
 

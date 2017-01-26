@@ -23,41 +23,42 @@
     <section id="content">
     </section>
     <section id="quiz-block">
-      <div id="grey-box">
-        <form id="scenario-form" class="form">
-          <div id="scenario"> <!--Luay created tags to render scenarios and answers-->
-          </div>
-          <div id="answers"> <!--Brandon set the answers to input tags-->
-            <ul id="answers-list">
-              <li>
-                <input type="radio" id="input-0" />
-                <label for="input-0" id="label-0" class="label"></label>
-              </li>
-              <li>
-                <input type="radio" id="input-1" />
-                <label for="input-1" id="label-1" class="label"></label>
-              </li>
-              <li>
-                <input type="radio" id="input-2" />
-                <label for="input-2" id="label-2" class="label"></label>
-              </li>
-              <li>
-                <input type="radio" id="input-3" />
-                <label for="input-3" id="label-3" class="label"></label>
-              </li>
-            </ul>
-          </div>
-          <button id="submit-button" type="submit">SUBMIT</button>
-        </form>
-        <form id="feedback-form" class="form">
-          <p>
+      <p id="instructions">Please choose an option and click submit to see feedback. Click the next button to continue to the next scenario.</p>
+      <section id="background-images">
+        <div id="grey-box">
+          <form id="scenario-form" class="quiz-block-form">
+            <div id="scenario" class="quiz-block-div"> <!--Luay created tags to render scenarios and answers-->
+            </div>
+            <div id="answers" class="quiz-block-div"> <!--Brandon set the answers to input tags-->
+              <ul id="answers-list">
+                <li>
+                  <input type="radio" id="input-0" />
+                  <label for="input-0" id="label-0" class="label"></label>
+                </li>
+                <li>
+                  <input type="radio" id="input-1" />
+                  <label for="input-1" id="label-1" class="label"></label>
+                </li>
+                <li>
+                  <input type="radio" id="input-2" />
+                  <label for="input-2" id="label-2" class="label"></label>
+                </li>
+                <li>
+                  <input type="radio" id="input-3" />
+                  <label for="input-3" id="label-3" class="label"></label>
+                </li>
+              </ul>
+              <button id="submit-button" type="submit">SUBMIT</button>
+            </div>
+          </form>
+          <form id="feedback-form" class="quiz-block-form">
             <p id="render-feedback" class="feedback"></p>
-          </p>
-        </form>
-        <form id="next-form" class="form">
-          <button type="submit" id="next">NEXT</button>
-        </form>
-      </div>
+          </form>
+          <form id="next-form" class="quiz-block-form">
+            <button type="submit" id="next">NEXT</button>
+          </form>
+        </div>
+      </section>
     </section>
     <form id="thank-you">
     </form>

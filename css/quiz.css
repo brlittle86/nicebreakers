@@ -5,29 +5,66 @@ html {
 #quiz-body {
   width: 100%;
   min-height: 100%;
-  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 1.5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#background-images {
+  width: 90%;
+  height: 700px;
   background-size: 100%;
-  z-index: -1;
+  margin: auto;
+  background-repeat: no-repeat;
+  padding-top: 1px;
 }
 
-#grey-box {
-  height: 300px;
-  background: rgb(192,192,192, 0.75);
+#grey-box{
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
 }
 
-.form {
-  background: rgb(192,192,192, 0.75);
+.quiz-block-form {
+  width: 75%;
+  margin: auto;
+}
+
+#scenario, #render-feedback {
+  font-size: 25px;
+  padding-top: 3%;
+  margin: 0;
+}
+
+#instructions {
+  font-size: 25px;
+  width: 75%;
+  text-align: center;
 }
 
 .label{
-  opacity: 1;
-  font-family: sans-serif;
   color: white;
   text-shadow: 1.5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  z-index: 5;
+  font-size: 20px;
 }
 
 #answers-list li {
   width: 100%;
   display: block;
+  padding-top: 1%;
+}
+
+#submit-button, #next {
+  font-size: 120%;
+  color: black;
+  background-color: #f2f2f2;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  display: block;
+  margin-top: 3%;
+  margin-bottom: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
