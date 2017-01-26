@@ -1,5 +1,23 @@
 #quiz-block {
   height: 600px;
-  /*background-image: url(../references/coffeeshop.jpg);*/
   background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#grey-box {
+  height: 300px;
+  background-color: rgb(192,192,192, 0.75);
+}
+
+.label{
+  opacity: 1;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 1.5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  z-index: 5;
+}
+
+#answers-list li {
+  width: 100%;
+  display: block;
 }
