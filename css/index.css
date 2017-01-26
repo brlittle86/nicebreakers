@@ -1,17 +1,24 @@
+html {
+  height: 100%;
+}
 body {
-  background-image: url("../img/coffeeshop.png");
+  background-image: url("../img/altcoffeeshop.png");
   background-repeat: no-repeat;
   background-size: 100%;
-
+  height: auto;
+  min-height: 100%;
 }
 p {
   margin: 0px;
   padding: 0px;
 }
 div {
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: 20px 15% 0px 15%;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
   padding: 8px 0px 8px 0px;
+  height: auto;
 }
 #story {
   width:70%;
@@ -32,20 +39,35 @@ div {
 
 fieldset {
   text-align: center;
+  border-color: #00233f;
+  border-width: thin;
 }
 
 #main-form {
   margin: auto;
   width: 40%;
+  border: none;
 }
 
 #name-section {
-  width: 22%;
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: 0px 15% 0px 15%;
-  padding: 10px 0px 10px 0px;
+  background-color: rgba(255, 255, 255, 0.6);
   width: 70%;
+  height: auto;
+  margin: auto;
+  margin-top: 0;
+  padding-bottom: 1%;
+  margin-bottom: 3%;
 }
+
+#name-section p{
+  font-size: 3em;
+  width: 50%;
+  text-align: center;
+  vertical-align: top;
+  margin: auto;
+  color: #f9a908;
+}
+
 #enter-your-name {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 22px;
@@ -55,13 +77,15 @@ fieldset {
   margin-left: 5px;
   padding-bottom: 2px;
 }
+
 #name-input {
   font-family: 'PT Sans Narrow', sans-serif;
-  width: 70%;
+  width: 75%;
   display: inline;
   clear: left;
   float: left;
   height: 25px;
+  font-size: 20px;
 }
 
 #submit-button {
@@ -74,6 +98,6 @@ fieldset {
   margin-bottom: 0;
   text-align: center;
   float: right;
-  /*position: absolute;*/
+  padding-right: 2%;
   width: 70px;
 }
