@@ -14,8 +14,9 @@ function thankYou() {
   var quizBlock = document.getElementById('quiz-block');
   quizBlock.parentElement.removeChild(quizBlock);
   var thanks = document.getElementById('thank-you');
+  var parsedName = JSON.parse(storedUserName);
   var pEl = document.createElement('p');
-  pEl.textContent = 'Thank you for completing our little training exercise. If you would like more information, please click this button to take you to our resources page. ';
+  pEl.textContent = parsedName + ', thank you for completing our little training exercise. If you would like more information, please click this button to take you to our resources page. ';
   thanks.appendChild(pEl);
   var button = document.createElement('button');
   button.setAttribute('type', 'click');
