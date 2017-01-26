@@ -1,16 +1,25 @@
+body {
+  background-image: url("../img/coffeeshop.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
 #story {
   width:70%;
   margin: auto;
   font-size: 20px;
   font-family: Comic-Neue-Sans;
-  padding-top: 20px;
+  margin-top: 20px;
+  /*border: 2px solid grey;*/
+  /*background-color: grey;*/
 }
 #goal-statement {
   width:70%;
   margin: auto;
   font-size: 20px;
   font-family: Comic-Neue-Sans;
-  padding-top: 20px;
+  margin-top: 20px;
   padding: 0px;
 }
 
@@ -22,7 +31,7 @@
   font-size: 20px;
 }
 #name-input {
-  width: 80%; 
+  width: 80%;
 }
 
 #submit-button {
