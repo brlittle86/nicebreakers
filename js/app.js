@@ -8,7 +8,7 @@ function mainPageUserStorage(){
   if (storedUserName !== null) {
     JSON.parse(storedUserName);
     var mainForm = document.getElementById('main-form').style.visibility = 'hidden';
-    var mainWelcome = document.getElementById('name');
+    var mainWelcome = document.getElementById('name-section');
     var pEl = document.createElement('p');
     pEl.textContent = 'Welcome ' + storedUserName + '!';
     mainWelcome.appendChild(pEl);

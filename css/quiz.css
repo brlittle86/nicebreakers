@@ -5,8 +5,7 @@ html {
 #quiz-body {
   width: 100%;
   min-height: 100%;
-  color: white;
-  text-shadow: 1.5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  color: #00233f;
 }
 
 #background-images {
@@ -44,8 +43,7 @@ html {
 }
 
 .label{
-  color: white;
-  text-shadow: 1.5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  color: #00233f;
   font-size: 20px;
 }
 
