@@ -20,6 +20,7 @@ answerThree.addEventListener('change', changeThreeInput, false);
 
 // Luay Typed render Scenario and answer functions; Stephanie placed render answers section inside this function/reorganized
 function renderScenario(i) {
+  document.getElementById('quiz-block').style.visibility = 'visible';
   var backgroundEl = document.getElementById('background-images');
   backgroundEl.style.backgroundImage = 'url(' + scenariosArray[i].filepath + ')';
   var scenarioEl = document.getElementById('scenario');

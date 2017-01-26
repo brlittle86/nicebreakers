@@ -6,7 +6,7 @@ var i = localStorage.getItem('globalIndex');
 if (i !== null) {
   JSON.parse(i);
 } else {
-  var i = 0;
+  i = 0;
   console.log(i);
 }
 

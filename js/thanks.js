@@ -2,7 +2,10 @@
 
 //Luay created listener for next button
 var nextButton = document.getElementById('next-form');
-nextButton.addEventListener('click', nextButtonListener, false);
+if (nextButton !== null) {
+  nextButton.addEventListener('click', nextButtonListener, false);
+}
+
 var resourcesButton = document.getElementById('thank-you');
 resourcesButton.addEventListener('click', resourcesButtonListener, false);
 
@@ -28,6 +31,7 @@ function nextButtonListener (event) {
   if (i === (scenariosArray.length - 1)) {
     thankYou();
     localStorage.removeItem('globalIndex');
+    i = 0;
   } else {
     i++;
     localStorage.globalIndex = JSON.stringify(i);
