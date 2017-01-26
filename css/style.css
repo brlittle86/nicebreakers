@@ -24,6 +24,7 @@ body {
   z-index: 100;
   color: #00233f;
   width: 100%;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 header {
