@@ -20,15 +20,15 @@
   src: url('../fonts/Offside-Regular.ttf')
 }
 
-/*#body-background-img {
+#body-background-img {
   max-width: 100%;
   padding: 0px;
   margin: 0px;
   background: no-repeat;
   opacity: 0.5;
   position: absolute;
-  z-index: 1;
-}*/
+  /*z-index: 1;*/
+}
 
 body {
   background-color: grey;
