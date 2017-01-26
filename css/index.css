@@ -11,8 +11,8 @@ body {
   font-size: 20px;
   font-family: Comic-Neue-Sans;
   margin-top: 20px;
-  border: 2px solid grey;
-  background-color: grey;
+  /*border: 2px solid grey;*/
+  /*background-color: grey;*/
 }
 #goal-statement {
   width:70%;
