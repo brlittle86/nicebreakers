@@ -26,6 +26,10 @@
   margin: auto;
 }
 
+#resource-lists a {
+  text-decoration: underline;
+}
+
 #dos, #donts, #link-list, #site-desc {
     list-style-type: none;
 }
@@ -39,4 +43,9 @@
   border-radius: 8px;
   padding: 10px;
   padding-top: 1px;
+}
+
+#external-header {
+  width: 100%;
+  text-align: center;
 }
