@@ -3,7 +3,6 @@
   font-family: 'Janda';
   src: url('../fonts/Adventure.otf')
 }
-
 @font-face {
   font-family: 'Comic-Neue-Sans';
   src: url('../fonts/ComicNeueSansID.ttf')
@@ -15,6 +14,10 @@
 @font-face {
   font-family: 'PORKYS';
   src: url('../fonts/PORKYS.TTF')
+}
+@font-face {
+  font-family: 'offside';
+  src: url('../fonts/Offside-Regular.ttf')
 }
 
 /*#body-background-img {
@@ -38,32 +41,44 @@ body {
 
 header {
   display: block;
-  height: 110px;
+  height: 80px;
   background: black;
+  padding: zero;
+  margin: zero;
 }
 
-#page-name img {
-  width: 300px;
+#logo-image  {
+  width: 60px;
+  float: left;
+  margin: 10px 20px 10px 20px;
+  padding: zero;
 }
 #page-name {
   text-align: center;
-  font-size: 40px;
+  font-size: 44px;
   color: white;
-  font-family: PORKYS;
-  padding: 0px 40px 0px 40px;
+  font-family: offside;
+  padding: 10px 10px 10px 10px;
+  margin: zero;
   float: left;
-  text-shadow: 2px 8px black;
 }
-
+h5 {
+  padding: 0px;
+  margin: 0px;
+}
 #nav {
   float: right;
-  margin: 20px 30px;
+  margin: 23px 30px;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
 }
 li {
   text-decoration: none;
   display: inline;
   max-width: 100%;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 15px 0px 15px;
   font-family: Comic-Neue-Sans;
   font-size: 27px;
   color: white;

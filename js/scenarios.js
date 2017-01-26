@@ -31,6 +31,8 @@ function renderScenario(i) {
     labelEl.textContent = scenariosArray[i].answerArray[j];
     console.log(labelEl.textContent);
   }
+  document.getElementById('scenario-form').style.visibility = 'visible';
+  document.getElementById('next-form').style.visibility = 'visible';
 }
 
 //Stephanie created handlers

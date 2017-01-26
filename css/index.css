@@ -1,10 +1,31 @@
 #story {
-  margin: 50px 50px 50px 50px;
-  font-size: 25px;
+  width:70%;
+  margin: auto;
+  font-size: 20px;
   font-family: Comic-Neue-Sans;
+  padding-top: 20px;
 }
 #goal-statement {
-  margin: 50px 50px 50px 50px;
-  font-size: 25px;
+  width:70%;
+  margin: auto;
+  font-size: 20px;
   font-family: Comic-Neue-Sans;
+  padding-top: 20px;
+  padding: 0px;
+}
+
+#name {
+  width: 22%;
+  margin: auto;
+}
+#enter-your-name {
+  font-size: 20px;
+}
+#name-input {
+  width: 80%; 
+}
+
+#submit-button {
+  background-color: pink;
+  color: white;
 }
