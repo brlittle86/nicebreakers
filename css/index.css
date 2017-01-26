@@ -4,37 +4,75 @@ body {
   background-size: 100%;
 
 }
-
+p {
+  margin: 0px;
+  padding: 0px;
+}
+div {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0px 15% 0px 15%;
+  padding: 8px 0px 8px 0px;
+}
 #story {
   width:70%;
   margin: auto;
-  font-size: 20px;
-  font-family: Comic-Neue-Sans;
+  font-size: 25px;
   margin-top: 20px;
-  /*border: 2px solid grey;*/
-  /*background-color: grey;*/
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 #goal-statement {
   width:70%;
   margin: auto;
-  font-size: 20px;
-  font-family: Comic-Neue-Sans;
+  font-size: 25px;
+  font-family: 'PT Sans Narrow', sans-serif;
   margin-top: 20px;
   padding: 0px;
+
 }
 
-#name {
-  width: 22%;
+fieldset {
+  text-align: center;
+}
+
+#main-form {
   margin: auto;
+  width: 50%;
+}
+
+#name-section {
+  width: 22%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0px 15% 0px 15%;
+  padding: 10px 0px 10px 0px;
+  width: 70%;
 }
 #enter-your-name {
-  font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  float: left;
 }
 #name-input {
-  width: 80%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  width: 70%;
+  display: inline;
+  clear: left;
+  float: left;
+  height: 25px;
 }
 
 #submit-button {
-  background-color: pink;
-  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 120%;
+  color: black;
+  background-color: #f2f2f2;
+  border: 1px solid #bdbdbd ;
+  border-radius: 5px;
+  margin-bottom: 0;
+  text-align: center;
+  margin-left: 20px;
+  float: right;
+  /*position: absolute;*/
+  width: 70px;
 }
