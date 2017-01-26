@@ -23,5 +23,5 @@ function nameSubmissionEventMain(event) {
   event.stopPropagation();
   storedUserName = event.target.username.value; // added username to local storage/global variable by Brandon
   localStorage.storedUserName = JSON.stringify(storedUserName);
-  location.href = '../html/quiz.html';
+  location.href = 'html/quiz.html';
 }
