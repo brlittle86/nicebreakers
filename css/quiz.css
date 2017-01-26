@@ -5,26 +5,37 @@ html {
 #quiz-body {
   width: 100%;
   min-height: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  z-index: -1;
-}
-
-#grey-box {
-  height: 300px;
-  background: rgb(192,192,192, 0.75);
-}
-
-.form {
-  background: rgb(192,192,192, 0.75);
-}
-
-.label{
-  opacity: 1;
   font-family: sans-serif;
   color: white;
   text-shadow: 1.5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  z-index: 5;
+}
+
+#background-images {
+  width: 75%;
+  height: 600px;
+  background-size: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+  padding-top: 1px;
+}
+
+#grey-box{
+  height: 70%;
+  background-color: rgba(192,192,192, 0.75);
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.quiz-block-form {
+  width: 75%;
+  margin: auto;
+}
+
+.label{
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 1.5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 #answers-list li {
