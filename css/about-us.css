@@ -1,0 +1,25 @@
+#profile-section {
+  margin: 50px 50px 50px 50px;
+  display: inline-block;
+}
+
+.parent-div {
+  display: flex;
+}
+
+.pic-div img {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 0px 20px 0px 20px;
+  border: 2px solid orange;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.bio-paragraph {
+  height: auto;
+  margin-left: 15px;
+  font-size: 25px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
