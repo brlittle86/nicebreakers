@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Training</title>
+    <title>Training - Nice Breakers</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" /><!--Luay created CSS links-->
     <link rel="stylesheet" type="text/css" href="../css/quiz.css" />
   </head>
-  <body>
+  <body id="quiz-body">
     <header>
-      <h1>Nice Breakers</h1>
+      <h1 id="page-name">Nice Breakers</h1>
       <section id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -20,34 +20,49 @@
     </header>
     <section id="content">
     </section>
-    <form id="scenario-form">
-      <div id="scenario"> <!--Luay created tags to render scenarios and answers-->
+    <section id="quiz-block">
+      <div id="grey-box">
+        <form id="scenario-form" class="form">
+          <div id="scenario"> <!--Luay created tags to render scenarios and answers-->
+          </div>
+          <div id="answers"> <!--Brandon set the answers to input tags-->
+            <ul id="answers-list">
+              <li>
+                <input type="radio" id="input-0" />
+                <label for="input-0" id="label-0" class="label"></label>
+              </li>
+              <li>
+                <input type="radio" id="input-1" />
+                <label for="input-1" id="label-1" class="label"></label>
+              </li>
+              <li>
+                <input type="radio" id="input-2" />
+                <label for="input-2" id="label-2" class="label"></label>
+              </li>
+              <li>
+                <input type="radio" id="input-3" />
+                <label for="input-3" id="label-3" class="label"></label>
+              </li>
+            </ul>
+          </div>
+          <button id="submit-button" type="submit">SUBMIT</button>
+        </form>
+        <form id="feedback-form" class="form">
+          <p>
+            <p id="render-feedback" class="feedback"></p>
+          </p>
+        </form>
+        <form id="next-form" class="form">
+          <button type="submit" id="next">NEXT</button>
+        </form>
       </div>
-      <div id="answers"> <!--Brandon set the answers to input tags-->
-        <input type="radio" id="input-0" />
-        <label for="input-0" for=""id="label-0"></label>
-        <input type="radio" id="input-1" />
-        <label for="input-1" id="label-1"></label>
-        <input type="radio" id="input-2" />
-        <label for="input-2" id="label-2"></label>
-        <input type="radio" id="input-3" />
-        <label for="input-3" id="label-3"></label>
-      </div>
-      <button id="submit-button" type="submit">SUBMIT</button>
-    </form>
-    <form>
-      <p>
-        <p id="render-feedback" class="feedback"></p>
-      </p>
-    </form>
-    <form id="next-form">
-      <button type="submit" id="next">NEXT</button>
-    </form>
+    </section>
     <form id="thank-you">
     </form>
-    <script src="../js/functions.js"></script>
+    <script src="../js/global.js"></script>
     <script src="../js/objects.js"></script>
-    <script src="../js/handlers.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="../js/scenarios.js"></script>
+    <script src="../js/username.js"></script>
+    <script src="../js/thanks.js"></script>
   </body>
 </html>

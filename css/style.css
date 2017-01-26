@@ -1,0 +1,90 @@
+/*Luay Worked on this CSS file*/
+@font-face {
+  font-family: 'Janda';
+  src: url('../fonts/Adventure.otf')
+}
+@font-face {
+  font-family: 'Comic-Neue-Sans';
+  src: url('../fonts/ComicNeueSansID.ttf')
+}
+@font-face {
+  font-family: 'Fishfingers-Light';
+  src: url('../fonts/FishfingersLight.ttf')
+}
+@font-face {
+  font-family: 'PORKYS';
+  src: url('../fonts/PORKYS.TTF')
+}
+@font-face {
+  font-family: 'offside';
+  src: url('../fonts/Offside-Regular.ttf')
+}
+
+#body-background-img {
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: no-repeat;
+  opacity: 0.5;
+  position: absolute;
+  /*z-index: 1;*/
+}
+
+body {
+  background-color: grey;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+
+header {
+  display: block;
+  height: 80px;
+  background: black;
+  padding: zero;
+  margin: zero;
+}
+
+#logo-image  {
+  width: 60px;
+  float: left;
+  margin: 10px 20px 10px 20px;
+  padding: zero;
+}
+#page-name {
+  text-align: center;
+  font-size: 44px;
+  color: white;
+  font-family: offside;
+  padding: 10px 10px 10px 10px;
+  margin: zero;
+  float: left;
+}
+h5 {
+  padding: 0px;
+  margin: 0px;
+}
+#nav {
+  float: right;
+  margin: 23px 30px;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+li {
+  text-decoration: none;
+  display: inline;
+  max-width: 100%;
+  margin: 0px 15px 0px 15px;
+  font-family: Comic-Neue-Sans;
+  font-size: 27px;
+  color: white;
+  text-shadow: 2px 4px black;
+}
+li a {
+  text-decoration: none;
+  color: inherit;
+}
