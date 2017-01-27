@@ -60,12 +60,14 @@ fieldset {
 }
 
 #name-section p{
-  font-size: 3em;
-  width: 50%;
-  text-align: center;
-  vertical-align: top;
-  margin: auto;
-  color: #f9a908;
+ font-size: 3em;
+ width: 50%;
+ text-align: center;
+ vertical-align: top;
+ position: relative;
+ top: -40px;
+ margin: auto;
+ color: #f9a908 ;
 }
 
 #enter-your-name {
