@@ -11,7 +11,7 @@ html {
 
 #quiz-block{
   position: absolute;
-  top: 10%;
+  top: 17%;
 }
 
 #background-images {
@@ -28,7 +28,7 @@ html {
 #grey-box{
   height: 80%;
   min-height: 80%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 80%;
   margin: auto;
   margin-top: 3%;
@@ -46,15 +46,12 @@ html {
   margin: 0;
 }
 
-#instructions {
-  font-size: 1.7em;
+#render-feedback {
+  background-color: rgba(249, 169, 8, 0.75);
   text-align: center;
-  width: 75%;
-  margin: auto;
-  padding-top: 3%;
-  padding-bottom: 1%;
-  padding-right: 0;
-  padding-left: 0;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
 }
 
 .label{
